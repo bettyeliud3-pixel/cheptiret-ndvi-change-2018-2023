@@ -1,53 +1,66 @@
-
 # Cheptiret Ward NDVI Change Analysis (2018–2023)
 
 ## 1. Project Overview
 
-This project examines changes in vegetation conditions in Cheptiret Ward, Kesses Sub-County, Uasin Gishu County, Kenya, between 2018 and 2023 using satellite imagery and Geographic Information Systems (GIS).
+This project examines changes in vegetation conditions in Cheptiret Ward, Kesses Sub-County, Uasin Gishu County, Kenya, between 2018 and 2023. It uses Sentinel-2 satellite imagery and Geographic Information Systems (GIS) to calculate and compare the Normalized Difference Vegetation Index (NDVI).
 
-The analysis uses the Normalized Difference Vegetation Index (NDVI) to assess vegetation greenness and compare spatial patterns across the two years.
+The project was completed using QGIS. It demonstrates how satellite imagery and spatial analysis can be used to monitor vegetation conditions over time.
 
-## 2. Objectives
+## 2. Project Objectives
 
 - Calculate NDVI for 2018 and 2023.
 - Map vegetation conditions for both years.
 - Calculate the difference between the two NDVI layers.
-- Identify areas with increases or decreases in NDVI.
+- Identify areas where NDVI increased or decreased.
 
-## 3. Data Sources
+## 3. Study Area
 
-- Satellite imagery: Sentinel-2.
-- Study area boundary: Cheptiret Ward boundary layer.
-- Software: QGIS.
+The study area is Cheptiret Ward in Kesses Sub-County, Uasin Gishu County, Kenya.
 
-## 4. Methodology
+## 4. Data Sources and Tools
 
-Sentinel-2 imagery was processed in QGIS to calculate NDVI using the red band (B4) and near-infrared band (B8).
+- **Satellite imagery:** Sentinel-2.
+- **GIS software:** QGIS.
+- **Vegetation index:** Normalized Difference Vegetation Index (NDVI).
+- **Analysis:** Raster calculation, clipping, map styling, and comparison of NDVI values.
 
-The resulting NDVI layers were used to map vegetation conditions in 2018 and 2023. A difference analysis was used to compare the two periods.
+NDVI was calculated using the near-infrared (NIR) and red bands:
 
-NDVI = (B8 - B4) / (B8 + B4)
+NDVI = (NIR − Red) / (NIR + Red)
 
-NDVI difference = NDVI 2023 - NDVI 2018
+## 5. Maps and Results
 
-## 5. Results
+### NDVI Map — 2018
 
-The final maps and interpretation of the results will be added here after the analysis and comparison have been documented.
+This map shows the spatial distribution of vegetation greenness in Cheptiret Ward in 2018.
 
-## 6. Tools and Skills
+![Cheptiret Ward NDVI 2018](Cheptiret%20NDVI%202018%20clip.png)
 
-- QGIS
-- Remote sensing
-- Sentinel-2 satellite imagery
-- Raster analysis
-- NDVI calculation
-- Spatial change analysis
-- Thematic mapping
+### NDVI Map — 2023
 
-## 7. Limitations
+This map shows vegetation greenness in Cheptiret Ward in 2023.
 
-Differences in acquisition dates, seasonal conditions, cloud cover and image processing can affect NDVI comparisons. The results indicate changes in vegetation greenness and do not, by themselves, prove the causes of those changes.
+![Cheptiret Ward NDVI 2023](Cheptiret_NDVI_2023.png)
 
-## 8. Author
+### NDVI Change Map — 2018 to 2023
 
-Geography | GIS | Remote Sensing
+This map represents the difference between the 2023 and 2018 NDVI values.
+
+![Cheptiret Ward NDVI Change 2018–2023](Cheptiret_NDVI_Change_2018_2023.png)
+
+Positive NDVI differences indicate an increase in NDVI, while negative differences indicate a decrease. These changes describe vegetation-index patterns and do not, by themselves, establish the causes of vegetation change.
+
+## 6. Skills Demonstrated
+
+- Satellite imagery processing.
+- NDVI calculation using raster bands.
+- Raster clipping and spatial analysis in QGIS.
+- Raster visualisation and map production.
+- Comparing vegetation conditions across different years.
+- Documenting a GIS project using GitHub.
+
+## 7. Conclusion
+
+This project demonstrates a practical workflow for analysing and mapping vegetation conditions using satellite imagery and open-source GIS software. Comparing NDVI for 2018 and 2023 provides a basis for identifying spatial differences in vegetation greenness within Cheptiret Ward.
+
+The maps should be interpreted alongside information about rainfall, cropping patterns, land management, and other factors before drawing conclusions about the causes of observed changes.
